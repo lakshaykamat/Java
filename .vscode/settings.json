@@ -1,7 +1,9 @@
 {
     "java.project.sourcePaths": [
+        "5. Escape Sequences",
+        "4. Strings",
         "3. Reference Data Types",
         "2. Primirive Data Types",
-        "4. Strings"
+        "6. Array"
     ]
 }

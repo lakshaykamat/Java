@@ -19,5 +19,7 @@ public class Main {
         System.out.println(msgLength);
         System.out.println(index);
         System.out.println(message.replace("l", "p"));
+
+        //and many more check it out by yourself
     }
 }
