@@ -2,8 +2,8 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        String userChoice;
+        Scanner scanner = new Scanner(System.in);//input object
+        String userChoice;//stores user choice
         byte userNum;
         byte userScore = 0;
         byte computerScore = 0;
