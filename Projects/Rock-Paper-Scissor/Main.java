@@ -2,27 +2,27 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);//input object
-        String userChoice;//stores user choice
+        Scanner scanner = new Scanner(System.in);// input object
+        String userChoice;// stores user choice
         byte userNum;
-        byte userScore = 0;
-        byte computerScore = 0;
-        String computerChoice;
-        // Computer choice generated
-        double randomNum = Math.floor((Math.random() * 3) + 1);
-        if (randomNum == 1) {
-            computerChoice = "rock";
-        } else if (randomNum == 2) {
-            computerChoice = "paper";
-        } else {
-            computerChoice = "scissor";
-        }
-
-        // User Choice
+        byte userScore = 0; // user Score
+        byte computerScore = 0;// Computer Score
+        String computerChoice; // stores computer choice
         System.out.println("1. Rock");
         System.out.println("2. Paper");
         System.out.println("3. Scissor");
+        // Computer choice generated here
         for (byte i = 1; i <= 5; i++) {
+            double randomNum = Math.floor((Math.random() * 3) + 1);
+            if (randomNum == 1) {
+                computerChoice = "rock";
+            } else if (randomNum == 2) {
+                computerChoice = "paper";
+            } else {
+                computerChoice = "scissor";
+            }
+            // User Choice
+
             System.out.print("Choose any One Number between:");
             userNum = scanner.nextByte();
             if (userNum == 1) {
@@ -37,31 +37,37 @@ public class Main {
                 userScore += 1;
                 computerScore += 1;
                 System.out.println("Draw");
+                System.out.println("Your Score:" + userScore);
+                System.out.println("Computer Score:" + computerScore);
             } else if (computerChoice == "rock" && userChoice == "paper") {
                 userScore += 2;
-                computerScore -= 2;
                 System.out.println("You Win");
+                System.out.println("Your Score:" + userScore);
+                System.out.println("Computer Score:" + computerScore);
             } else if (computerChoice == "paper" && userChoice == "scissor") {
                 userScore += 2;
-                computerScore -= 2;
                 System.out.println("You Win");
+                System.out.println("Your Score:" + userScore);
+                System.out.println("Computer Score:" + computerScore);
             } else if (computerChoice == "scissor" && userChoice == "rock") {
                 userScore += 2;
-                computerScore -= 2;
                 System.out.println("You win");
+                System.out.println("Your Score:" + userScore);
+                System.out.println("Computer Score:" + computerScore);
             } else {
                 computerScore += 2;
-                userScore -= 2;
                 System.out.println("Computer Win");
+                System.out.println("Your Score:" + userScore);
+                System.out.println("Computer Score:" + computerScore);
             }
         }
 
         // Result
-        System.out.println("----------------Results------------------");
+        System.out.println("-------------Results-----------");
         if (userScore == computerScore) {
             System.out.println("Your Score:" + userScore);
             System.out.println("Computer Score:" + computerScore);
-            System.out.println("Math Draw");
+            System.out.println("Math is Draw");
         } else if (userScore > computerScore) {
             System.out.println("Your Score:" + userScore);
             System.out.println("Computer Score:" + computerScore);

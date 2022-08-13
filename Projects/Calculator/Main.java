@@ -16,6 +16,7 @@ public class Main {
         
         System.out.print("Enter the operator:");
         operator = scanner.next().charAt(0);
+        // operator = scanner.next();
 
         switch (operator) {
             case '+':
@@ -45,6 +46,13 @@ public class Main {
             System.out.print(num2);
             System.out.print("= ");
                 System.out.println(num / num2);
+                break;
+            case '%':
+            System.out.print(num);
+            System.out.print(operator);
+            System.out.print(num2);
+            System.out.print("= ");
+                System.out.println(num % num2);
                 break;
             default:
                 System.out.println("You havn't defined the operator");
