@@ -21,8 +21,8 @@ public class Main {
             } else {
                 computerChoice = "scissor";
             }
+            
             // User Choice
-
             System.out.print("Choose any One Number between:");
             userNum = scanner.nextByte();
             if (userNum == 1) {
@@ -36,29 +36,64 @@ public class Main {
             if (computerChoice == userChoice) {
                 userScore += 1;
                 computerScore += 1;
+                System.out.println(" ");
+                System.out.println("You chooses " + userChoice + " & Computer chooses " + computerChoice);
                 System.out.println("Draw");
                 System.out.println("Your Score:" + userScore);
                 System.out.println("Computer Score:" + computerScore);
+                System.out.println(" ");
+                // User winning conditions
             } else if (computerChoice == "rock" && userChoice == "paper") {
                 userScore += 2;
+                System.out.println(" ");
+                System.out.println("You chooses " + userChoice + " & Computer chooses " + computerChoice);
                 System.out.println("You Win");
                 System.out.println("Your Score:" + userScore);
                 System.out.println("Computer Score:" + computerScore);
+                System.out.println(" ");
             } else if (computerChoice == "paper" && userChoice == "scissor") {
                 userScore += 2;
+                System.out.println(" ");
+                System.out.println("You chooses " + userChoice + " & Computer chooses " + computerChoice);
                 System.out.println("You Win");
                 System.out.println("Your Score:" + userScore);
                 System.out.println("Computer Score:" + computerScore);
+                System.out.println(" ");
             } else if (computerChoice == "scissor" && userChoice == "rock") {
                 userScore += 2;
+                System.out.println(" ");
+                System.out.println("You chooses " + userChoice + " & Computer chooses " + computerChoice);
                 System.out.println("You win");
                 System.out.println("Your Score:" + userScore);
                 System.out.println("Computer Score:" + computerScore);
-            } else {
+                System.out.println(" ");
+                // Computer winning conditions
+            }else if(computerChoice == "paper" && userChoice == "rock"){
                 computerScore += 2;
+                System.out.println(" ");
+                System.out.println("You chooses " + userChoice + " & Computer chooses " + computerChoice);
                 System.out.println("Computer Win");
                 System.out.println("Your Score:" + userScore);
                 System.out.println("Computer Score:" + computerScore);
+                System.out.println(" ");
+            }else if(computerChoice == "scissor" && userChoice == "paper"){
+                computerScore += 2;
+                System.out.println(" ");
+                System.out.println("You chooses " + userChoice + " & Computer chooses " + computerChoice);
+                System.out.println("Computer Win");
+                System.out.println("Your Score:" + userScore);
+                System.out.println("Computer Score:" + computerScore);
+                System.out.println(" ");
+            }else if(computerChoice == "rock" && userChoice == "scissor"){
+                computerScore += 2;
+                System.out.println(" ");
+                System.out.println("You chooses " + userChoice + " & Computer chooses " + computerChoice);
+                System.out.println("Computer Win");
+                System.out.println("Your Score:" + userScore);
+                System.out.println("Computer Score:" + computerScore);
+                System.out.println(" ");
+            }else {
+                System.out.println("ERROR400");
             }
         }
 

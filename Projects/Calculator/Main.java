@@ -55,7 +55,7 @@ public class Main {
                 System.out.println(num % num2);
                 break;
             default:
-                System.out.println("You havn't defined the operator");
+                System.out.println("You havn't defined the operator or undefined operator");
                 break;
         }
     }
