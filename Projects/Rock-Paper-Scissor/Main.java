@@ -15,22 +15,22 @@ public class Main {
         for (byte i = 1; i <= 5; i++) {
             double randomNum = Math.floor((Math.random() * 3) + 1);
             if (randomNum == 1) {
-                computerChoice = "rock";
+                computerChoice = "Rock";
             } else if (randomNum == 2) {
-                computerChoice = "paper";
+                computerChoice = "Paper";
             } else {
-                computerChoice = "scissor";
+                computerChoice = "Scissor";
             }
             
             // User Choice
             System.out.print("Choose any One Number between:");
             userNum = scanner.nextByte();
             if (userNum == 1) {
-                userChoice = "rock";
+                userChoice = "Rock";
             } else if (userNum == 2) {
-                userChoice = "paper";
+                userChoice = "Paper";
             } else {
-                userChoice = "scissor";
+                userChoice = "Scissor";
             }
             // Battle Begins
             if (computerChoice == userChoice) {
@@ -43,7 +43,7 @@ public class Main {
                 System.out.println("Computer Score:" + computerScore);
                 System.out.println(" ");
                 // User winning conditions
-            } else if (computerChoice == "rock" && userChoice == "paper") {
+            } else if (computerChoice == "Rock" && userChoice == "Paper") {
                 userScore += 2;
                 System.out.println(" ");
                 System.out.println("You chooses " + userChoice + " & Computer chooses " + computerChoice);
@@ -51,7 +51,7 @@ public class Main {
                 System.out.println("Your Score:" + userScore);
                 System.out.println("Computer Score:" + computerScore);
                 System.out.println(" ");
-            } else if (computerChoice == "paper" && userChoice == "scissor") {
+            } else if (computerChoice == "Paper" && userChoice == "Scissor") {
                 userScore += 2;
                 System.out.println(" ");
                 System.out.println("You chooses " + userChoice + " & Computer chooses " + computerChoice);
@@ -59,7 +59,7 @@ public class Main {
                 System.out.println("Your Score:" + userScore);
                 System.out.println("Computer Score:" + computerScore);
                 System.out.println(" ");
-            } else if (computerChoice == "scissor" && userChoice == "rock") {
+            } else if (computerChoice == "Scissor" && userChoice == "Rock") {
                 userScore += 2;
                 System.out.println(" ");
                 System.out.println("You chooses " + userChoice + " & Computer chooses " + computerChoice);
@@ -68,7 +68,7 @@ public class Main {
                 System.out.println("Computer Score:" + computerScore);
                 System.out.println(" ");
                 // Computer winning conditions
-            }else if(computerChoice == "paper" && userChoice == "rock"){
+            }else if(computerChoice == "Paper" && userChoice == "Rock"){
                 computerScore += 2;
                 System.out.println(" ");
                 System.out.println("You chooses " + userChoice + " & Computer chooses " + computerChoice);
@@ -76,7 +76,7 @@ public class Main {
                 System.out.println("Your Score:" + userScore);
                 System.out.println("Computer Score:" + computerScore);
                 System.out.println(" ");
-            }else if(computerChoice == "scissor" && userChoice == "paper"){
+            }else if(computerChoice == "Scissor" && userChoice == "Paper"){
                 computerScore += 2;
                 System.out.println(" ");
                 System.out.println("You chooses " + userChoice + " & Computer chooses " + computerChoice);
@@ -84,7 +84,7 @@ public class Main {
                 System.out.println("Your Score:" + userScore);
                 System.out.println("Computer Score:" + computerScore);
                 System.out.println(" ");
-            }else if(computerChoice == "rock" && userChoice == "scissor"){
+            }else if(computerChoice == "Rock" && userChoice == "Scissor"){
                 computerScore += 2;
                 System.out.println(" ");
                 System.out.println("You chooses " + userChoice + " & Computer chooses " + computerChoice);
