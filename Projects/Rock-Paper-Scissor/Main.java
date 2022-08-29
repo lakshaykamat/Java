@@ -98,8 +98,10 @@ public class Main {
                 System.out.println("Something went wrong...");
             }
         }
-
-        // Result
+        result(userScore, computerScore);
+    }
+    //Result function
+    static void result(byte userScore,byte computerScore){
         System.out.println("-------------Results-----------");
         if (userScore == computerScore) {
             System.out.println("Your Score:" + userScore);
