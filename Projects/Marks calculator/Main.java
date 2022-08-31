@@ -23,8 +23,10 @@ public class Main {
         int obtainedMaarks = reportcard.calculateObtainedMarks(marksArray);
         // percentage
         double percentage = reportcard.percentage(marksArray,obtainedMaarks);
+        // grades
+        String grades = reportcard.calcgrades(percentage);
         // final report
-        reportcard.finalReport(name, standard, marksArray, obtainedMaarks, percentage);
+        reportcard.finalReport(name, standard, marksArray, obtainedMaarks, percentage, grades);
 
 
     }
