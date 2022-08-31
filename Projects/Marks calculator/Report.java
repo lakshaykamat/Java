@@ -19,6 +19,11 @@ public class Report {
             System.out.print("Subject " + i + " = ");
             // array starts from 0
             marks[i - 1] = scanner.nextInt();
+            while(marks[i - 1] > 100){
+                System.out.println("Marks can't be greater than 100");
+                System.out.print("Subject " + i + " = ");
+                marks[i - 1] = scanner.nextInt();
+            }
         }
         // initilizeing global varible
         this.MarksArray = marks;
