@@ -1,1 +1,0 @@
-[] marksArray = reportcard.marksToArray(Subcount);

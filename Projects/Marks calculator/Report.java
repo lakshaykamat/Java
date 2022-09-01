@@ -2,11 +2,11 @@ import java.util.Scanner;
 
 public class Report {
     Scanner scanner = new Scanner(System.in);
-    byte SubjectCount;
-    int[] MarksArray;
-    int obtainedMarks;
-    double percentage;
-    String grades;
+    byte SubjectCount;//subjects user have
+    int[] MarksArray;//array of marks
+    int obtainedMarks;//obtained marks by user or sum of all numbers in array
+    double percentage;//percentage 
+    String grades;//grades
 
     // Marks to Array
     int[] marksToArray(byte Subjectcount) {
@@ -19,6 +19,7 @@ public class Report {
             System.out.print("Subject " + i + " = ");
             // array starts from 0
             marks[i - 1] = scanner.nextInt();
+            //loop for checking the value is not greater than 100
             while(marks[i - 1] > 100){
                 System.out.println("Marks can't be greater than 100");
                 System.out.print("Subject " + i + " = ");
