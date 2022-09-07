@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/1. Variable constants" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/10. 2D Array" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/11.String Method" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/12. Array list" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/13. 2D Array list" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/14. for each loop" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/15. functions" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/16. Overloaded function" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/17. printf" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/18. OOPs" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/19. Constructor" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/2. Primirive Data Types" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/20. Overloaded constructor" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/21. toString" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/22. array of objects" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/23. object passing" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/24. static keyword" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/3. Reference Data Types" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/4. Strings" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/5. Escape Sequences" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/6. Array" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/7. Arthmetic Operator" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/8. Random numbers" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/9.Wrapper Class" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/GUI" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
