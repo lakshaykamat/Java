@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7d780ad3-9c61-4bdb-a27f-8a942b562553" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../GUI/Jframe/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../GUI/Jframe/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../GUI/Jframe/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../GUI/Jframe/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../GUI/Jframe/Jframe.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../GUI/Jframe/gigachad.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../GUI/Jframe/out/production/Jframe/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../GUI/Jframe/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GUI/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GUI/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GUI/tempCodeRunnerFile.java" beforeDir="false" />
-    </list>
+    <list default="true" id="7d780ad3-9c61-4bdb-a27f-8a942b562553" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
