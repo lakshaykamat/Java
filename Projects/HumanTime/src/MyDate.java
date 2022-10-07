@@ -3,10 +3,8 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 public class MyDate {
-    Date usrDate;
-    long usrDateMilliSecond;
-   Date currentDate;
-    long currentDateMilliSecond;
+    Date usrDate,currentDate;
+    long usrDateMilliSecond,currentDateMilliSecond;
     int totalDaysSpent, totalWeeksSpent, totalMonthSpent, totalYearSpent;
     MyDate(String usrDate) throws ParseException {
         SimpleDateFormat formatter = new SimpleDateFormat("d/M/yyy");//Formatter of String to Date
