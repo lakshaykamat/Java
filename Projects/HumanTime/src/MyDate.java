@@ -5,7 +5,8 @@ import java.util.Date;
 public class MyDate {
     Date usrDate,currentDate;
     long usrDateMilliSecond,currentDateMilliSecond;
-    int totalDaysSpent, totalWeeksSpent, totalMonthSpent, totalYearSpent;
+    int totalDaysSpent, totalWeeksSpent, totalMonthSpent;
+    Double totalYearSpent;
     MyDate(String usrDate) throws ParseException {
         SimpleDateFormat formatter = new SimpleDateFormat("d/M/yyy");//Formatter of String to Date
        Date formatDate = formatter.parse(usrDate);//Giving String to formatter
@@ -37,7 +38,7 @@ public class MyDate {
         this.totalDaysSpent = (int) (gap/day);
         this.totalWeeksSpent = (int) (gap/weeks);
         this.totalMonthSpent = (int) (gap/month);
-        this.totalYearSpent = (int) (gap/year);
+        this.totalYearSpent = (Double) (gap/year);
     }
     public Date getCurrentDate(){
         return currentDate;
@@ -54,5 +55,5 @@ public class MyDate {
     public int getTotalDaysSpent(){return totalDaysSpent;}
     public int getTotalWeeksSpent(){return totalWeeksSpent;}
     public int getTotalMonthSpent(){return totalMonthSpent;}
-    public int getTotalYearSpent(){return totalYearSpent;}
+    public Double getTotalYearSpent(){return totalYearSpent;}
 }
