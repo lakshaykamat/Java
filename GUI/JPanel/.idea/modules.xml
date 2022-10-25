@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<<< HEAD:GUI/JPanel/.idea/modules.xml
       <module fileurl="file://$PROJECT_DIR$/JPanel.iml" filepath="$PROJECT_DIR$/JPanel.iml" />
+========
+      <module fileurl="file://$PROJECT_DIR$/Serialization.iml" filepath="$PROJECT_DIR$/Serialization.iml" />
+>>>>>>>> origin/master:Serialization/.idea/modules.xml
     </modules>
   </component>
 </project>

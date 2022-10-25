@@ -1,14 +1,9 @@
-import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Game {
-    String userChoice;// stores user choice
-    int userScore = 0; // user Score
-    int computerScore = 0;// Computer Score
-    String computerChoice; // stores computer choice
-     final String rock = "Rock";
-    final String paper = "Paper";
-    final String scissor = "Scissor";
+    String userChoice,computerChoice;// stores user choice and computer choice
+    int userScore = 0,computerScore = 0; // user Score and computer Score
+    final String rock = "Rock",paper = "Paper",scissor = "Scissor";
 
 
     public void setUserChoice(String userChoice) {
@@ -45,53 +40,58 @@ public class Game {
 
     void Battle(){
         for (int i = 1; i <= 5; i++) {
-            setComputerChoice(computerChoiceGenerated());
             setUserChoice(getUsrOptions());
-
-            // Battle Begins
-            if (getComputerChoice().equals(getUserChoice())) {
-                String gameStateDraw = "Draw";
-                setUserScore((getUserScore()+1));
-                setComputerScore((getComputerScore() + 1));
-                displayTxt(getUserChoice(),getComputerChoice(),getUserScore(),getComputerScore(),gameStateDraw);
-
-                // User winning conditions
-            } else if (getComputerChoice().equals(rock) && getUserChoice().equals(paper)) {
-                //incrementing user scores by 2
-                setUserScore((getUserScore()+2));
-                String gameState = "You Win";
-                displayTxt(getUserChoice(),getComputerChoice(),getUserScore(),getComputerScore(),gameState);
-
-            } else if (getComputerChoice().equals(paper) && getUserChoice().equals(scissor)) {
-                setUserScore((getUserScore()+2));
-                String gameState = "You Win";
-                displayTxt(getUserChoice(),getComputerChoice(),getUserScore(),getComputerScore(),gameState);
-
-            } else if (getComputerChoice().equals(scissor) && getUserChoice().equals(rock)) {
-                setUserScore((getUserScore()+2));
-                String gameState = "You Win";
-                displayTxt(getUserChoice(),getComputerChoice(),getUserScore(),getComputerScore(),gameState);
-
-                // Computer winning conditions
-            }else if(getComputerChoice().equals(paper) && getUserChoice().equals(rock)){
-                setComputerScore((getComputerScore() + 2));
-                String gameState = "Computer Win";
-                displayTxt(getUserChoice(),getComputerChoice(),getUserScore(),getComputerScore(),gameState);
-
-            }else if(getComputerChoice().equals(scissor) && getUserChoice().equals(paper)){
-                //computerScore += 2;
-                setComputerScore((getComputerScore() + 2));
-                String gameState = "Computer Win";
-                displayTxt(getUserChoice(),getComputerChoice(),getUserScore(),getComputerScore(),gameState);
-
-            }else if(getComputerChoice().equals(rock) && getUserChoice().equals(scissor)){
-                setComputerScore((getComputerScore() + 2));
-                String gameState = "Computer Win";
-                displayTxt(getUserChoice(),getComputerChoice(),getUserScore(),getComputerScore(),gameState);
-
-            }else {
-                System.out.println("Something went wrong...");
+            //if usrChoice is not null then run the battle
+            if(getUserChoice() != null) {
+                // Set random computer choices
+                setComputerChoice(computerChoiceGenerated());
+                //compare computer and user choices
+                compareChoices();
+                //if user choice is null then terminate the function
+            }else{
+                System.out.println("Program Terminated!");
+                return;
             }
+        }
+        //show scores and result
+        result(getUserScore(), getComputerScore());
+    }
+    //Compares choices of user's and Computer
+    void compareChoices(){
+        if (getComputerChoice().equals(getUserChoice())) {
+            setUserScore((getUserScore() + 1));
+            setComputerScore((getComputerScore() + 1));
+            displayTxt(getUserChoice(), getComputerChoice(), getUserScore(), getComputerScore(), "Draw");
+
+            // User winning conditions
+        } else if (getComputerChoice().equals(rock) && getUserChoice().equals(paper)) {
+            //incrementing user scores by 2
+            setUserScore((getUserScore() + 2));
+            displayTxt(getUserChoice(), getComputerChoice(), getUserScore(), getComputerScore(), "You Win");
+
+        } else if (getComputerChoice().equals(paper) && getUserChoice().equals(scissor)) {
+            setUserScore((getUserScore() + 2));
+            displayTxt(getUserChoice(), getComputerChoice(), getUserScore(), getComputerScore(), "You Win");
+
+        } else if (getComputerChoice().equals(scissor) && getUserChoice().equals(rock)) {
+            setUserScore((getUserScore() + 2));
+            displayTxt(getUserChoice(), getComputerChoice(), getUserScore(), getComputerScore(), "You Win");
+
+            // Computer winning conditions
+        } else if (getComputerChoice().equals(paper) && getUserChoice().equals(rock)) {
+            setComputerScore((getComputerScore() + 2));
+            displayTxt(getUserChoice(), getComputerChoice(), getUserScore(), getComputerScore(), "Computer Win");
+
+        } else if (getComputerChoice().equals(scissor) && getUserChoice().equals(paper)) {
+            setComputerScore((getComputerScore() + 2));
+            displayTxt(getUserChoice(), getComputerChoice(), getUserScore(), getComputerScore(), "Computer Win");
+
+        } else if (getComputerChoice().equals(rock) && getUserChoice().equals(scissor)) {
+            setComputerScore((getComputerScore() + 2));
+            displayTxt(getUserChoice(), getComputerChoice(), getUserScore(), getComputerScore(), "Computer Win");
+
+        } else {
+            System.out.println("Error in Comparing choices");
         }
     }
     void result(int userScore,int computerScore){
@@ -125,7 +125,6 @@ public class Game {
     }
    String getUsrOptions() {
         // User Choice
-        try {
             System.out.println("1. Rock");
             System.out.println("2. Paper");
             System.out.println("3. Scissor");
@@ -146,9 +145,6 @@ public class Game {
                 System.out.println("Choose between 1-3");
             }
             scanner.close();
-        }catch (InputMismatchException inputMismatchException){
-            System.out.println("Choose Between 1-3 :(");
-        }
         return null;
     }
     void displayTxt(String userChoice, String computerChoice,int  userScore, int computerScore,String gameState){
