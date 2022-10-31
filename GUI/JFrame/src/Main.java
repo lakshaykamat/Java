@@ -1,6 +1,8 @@
+import javax.swing.*;
+import java.awt.*;
+
 public class Main {
     public static void main(String[] args) {
-<<<<<<< HEAD
         //JFrame = a GUI window to add components to
 
         JFrame jFrame = new JFrame();//new frame object
@@ -12,8 +14,6 @@ public class Main {
         ImageIcon imageIcon = new ImageIcon("logo.jpg");//image icon object
         jFrame.setIconImage(imageIcon.getImage()); //setting image icon
         jFrame.getContentPane().setBackground(Color.cyan); //setting background color
-=======
         System.out.println("Hello world!");
->>>>>>> origin/master
     }
 }
