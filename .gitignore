@@ -1,1 +1,4 @@
-/1. Variable constants/out/
+out/
+/.idea/
+/*/out/
+/*/.idea/
